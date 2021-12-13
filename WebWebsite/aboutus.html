@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smile Food Reviews</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" href="images/faviconlogo.png">
+    </head>
+
+<body>
+ 
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="home.html">SmileFoodReviewsツ</a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/hamburger-menu.svg" alt="Open Navigation Menu" width="15" height="15">
+        
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation Menu">
+                <ul class="primary-nav">
+                    <li class="current"><a href="home.html">Home</a></li>
+                    <li><a href="findarestraunt.html">Search for Restraunts</a></li>
+                    <li><a href="recs.html">Recomendations</a></li>
+                </ul>
+               
+                <ul class="secondary-nav">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li class="Contact-Us-cta"><a href="contact.html">Contact Us</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+
+    <div class=about-us-logo-1>
+        <img src="images/faviconlogo.png" alt="Our Logo.">
+
+    </div>
+
+
+<section class="about-us-section-1">
+
+    <div class="about-us-div-1">
+        <p class="we-are-smile">We are smile.</p>
+
+    <div class="about-us-div-2">
+        <p>We aim to provide you an easy and stress free way to find your next restraunt</p>
+    
+        <p>This website was made by Jaxon Newton based in Fort Collins, CO</p>
+    
+    
+    </div>   
+    </div>  
+
+
+
+
+
+
+</section>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            navbar = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            navbar.classList.add('mobile-cta');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            navbar.classList.remove('mobile-cta');
+
+        }) 
+    
+    </script>
+
+
+
+
+
+
+</body>
+</html>

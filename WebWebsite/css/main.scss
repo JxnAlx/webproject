@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+
+    background: #001219;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.navbar {
+    background: #ee9b00; 
+    padding: 1em;
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.5em;
+    }
+
+
+
+    nav {
+        display: none;
+    
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+
+}
+
+a {
+    color: white
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 3em 2em;
+}
+
+.subhead {
+    text-align: center;
+    font-size: 1.3em;
+    padding-bottom: 2em;
+    color: white;
+
+}
+
+.subhead-desc {
+    text-align: center;
+    color: white;
+    font-weight: none;
+    font-size: 1.5em;
+}
+
+.hero {
+
+    text-align: center;
+
+
+
+     .find-a-review-cta {
+        background-color: #bb3e03;
+        border: none;
+        color: blanchedalmond;
+        padding: 15px 32px;
+        //margin-bottom: 5em;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+        transition-duration: .4s;
+        border-radius: 5em;
+        
+    }
+
+        .find-a-review-cta:hover{
+            background-color: #ee9b00;
+
+        }
+
+
+
+    .write-a-review-cta {
+        background-color: #bb3e03;
+        border: none;
+        color: blanchedalmond;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+        transition-duration: .4s;
+        border-radius: 5em;
+    }
+
+        .write-a-review-cta:hover{
+            background-color: #ee9b00;
+
+        }
+
+
+}
+
+.features-section {
+    background: #005f73 ;
+
+}
+
+ul.features-list {
+    margin: 0;
+    text-align: center;
+    color: white;
+    li {
+        font-size: 1.5em;
+        margin: 1em;
+    }
+
+}
+
+.contact-contact{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+label {
+    display: block;
+    font-size: 1.3em;
+    margin-bottom: .5em;
+    color: #ee9b00;
+    
+}
+
+input, textarea{
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+}
+
+.send-message-cta{
+   background: #005f73; 
+   color: white;
+   cursor: pointer;
+   width: 100%;
+   font-family: 'Bebas Neue', cursive;
+   font-size: 1.5em;
+}
+
+nav.mobile-cta {
+    display: block;
+    width: 33%;
+}
+
+nav {position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    background:#ee9b00;
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+
+    li {
+
+        a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.5em;
+            text-align: right;
+
+            &:hover {
+                font-weight: bold;
+                font-size: 1.7em;
+            }
+
+        }
+       
+    }
+
+}
+
+.homepage-logo {    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+        
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+    ul {
+        display: flex;
+
+    } 
+
+    a {
+        color: black;
+        font-size: 1em;
+        padding: .1em 1em;
+
+    }
+
+    ul.primary-nav {
+        margin: 0;
+    }
+
+    li.current a {
+        font-weight: bold;
+
+    }
+
+    &:hover {
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    .helpful-desc {
+
+        font-size: 24px;
+    }
+
+}
+
+.send-message-cta {
+    text-align: center;
+    width: 100%;
+    border: #ee9b00;
+    
+     
+  }
+  
+.send-message-cta:hover {
+   background: #ee9b00;
+  }
+    
+#status {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    padding: 20px 20px;
+  }
+  
+#status.success {
+    background: green;
+    animation: status 4s ease forwards;
+  }
+  
+#status.error {
+    background: red;
+    animation: status 4s ease forwards; 
+    }
+
+@keyframes status {
+    0% {
+     opacity: 1;
+     pointer-events: all;     
+    }
+    90% {
+     opacity: 1;
+     pointer-events: all;       
+    }
+    100%{
+    opacity: 0;
+    pointer-events: none;
+    }
+}    
+
+.about-us-logo-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.we-are-smile {
+    text-align: center;
+    font-size: 52px;
+    color: blanchedalmond;
+    text-shadow: 1px 1px 2px white;
+}
+
+.about-us-div-2 {
+    text-align: center;
+    font-size: 32px;
+    color: blanchedalmond;
+    
+}
+
+.search-bar {
+    background-color: #bb3e03;
+    border: none;
+    color: blanchedalmond;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    transition-duration: .4s;
+    border-radius: 5em;
+    
+    }
+
+ .search-bar-section {
+     display: flex;
+}   
+
+.box{
+    float:left;
+    background-color: #005f73;
+    color: blanchedalmond;
+    width: 125px;
+    line-height: 50px;
+    text-align: center;
+    display: none;
+    text-decoration: none;
+   // background-image: url(https://media.istockphoto.com/vectors/abstract-blurred-colorful-background-vector-id1248542684?k=20&m=1248542684&s=612x612&w=0&h=1yKiRrtPhiqUJXS_yJDwMGVHVkYRk2pJX4PG3TT4ZYM=);
+    margin: 10px;
+    
+}
+
+
+
+.show {
+    display: block;
+
+
+}
+
+.btn {
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    background-color:#bb3e03;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+.btn:hover{
+    background-color:#ee9b00;
+
+}
+
+
+.universal-restraunt-div {
+    text-align: center;
+    font-size: 5em;
+    color: blanchedalmond;
+}
+
+.imgpics{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.myreview {
+    text-align: center;
+    font-size: 3em;
+    color: blanchedalmond;
+}
+
+.imgstarpics {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.rec1 {
+    font-size: 60px;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.eathere {
+    font-size: 40px;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.eatherepara {
+    font-size: 20px;
+    color: #ee9b00;
+    text-align: center;
+}

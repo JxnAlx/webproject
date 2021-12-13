@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smile Food Reviews</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" href="images/faviconlogo.png">
+    </head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="home.html">SmileFoodReviewsツ</a>
+    
+
+            <img id="mobile-cta" class="mobile-menu" src="images/hamburger-menu.svg" alt="Open Navigation Menu" width="15" height="15">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation Menu">
+                <ul class="primary-nav">
+                    <li class="current"><a href="home.html">Home</a></li>
+                    <li><a href="findarestraunt.html">Search for Restraunts</a></li>
+                    <li><a href="recs.html">Recomendations</a></li>
+                </ul>
+               
+                <ul class="secondary-nav">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li class="Contact-Us-cta"><a href="contact.html">Contact Us</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class=helpful-desc>
+        <div class="container">
+            <p class="subhead">An Honest Restraunt Review Website based in Fort Collins, CO</p>
+                <p class=subhead-desc>It's Fast and Easy to find your next dining destination</p>
+        </div>
+
+        
+
+    </section>
+
+
+    <section class="hero">
+        <div class="container">
+            
+                <div class="find-a-review-cta">
+                    <a href="findarestraunt.html" class="find-a-review-cta">Find A Restraunt</a>
+                </div>
+                <br>
+            </br>
+               
+        
+
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Honest, Real Reviews</li>
+                <li>Wide Range of Choices</li>
+                <li>Ability to write your own reviews</li>
+                <li>Find the right food experience for you in Fort Collins</li>
+
+            </ul>    
+
+
+        </div>
+     
+    </section>    
+
+    <section> 
+        <img id="homepage-logo" class="homepage-logo" src="images/faviconlogo.png" alt="Our Logo" width="333">
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            navbar = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            navbar.classList.add('mobile-cta');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            navbar.classList.remove('mobile-cta');
+
+        }) 
+    
+    </script>
+
+
+</body>
+</html>

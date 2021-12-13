@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smile Food Reviews</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" href="images/faviconlogo.png">
+    </head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="home.html">SmileFoodReviewsツ</a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/hamburger-menu.svg" alt="Open Navigation Menu" width="15" height="15">
+        
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation Menu">
+                <ul class="primary-nav">
+                    <li class="current"><a href="home.html">Home</a></li>
+                    <li><a href="findarestraunt.html">Search for Restraunts</a></li>
+                    <li><a href="recs.html">Recomendations</a></li>
+                </ul>
+               
+                <ul class="secondary-nav">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li class="Contact-Us-cta"><a href="contact.html">Contact Us</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</section>    
+
+<section class="contact-section"> 
+
+   <div class="container">
+
+       <p class="contact-contact">Contact</p>
+       <form action="https://formspree.io/f/mdobokez" method="POST" id="my-form">
+           <label for="name">Name</label>
+           <input type="text" id="name" name="name" placeholder="Your Name">
+
+           <label for="email">Email</label>
+           <input type="email" id="email" name="email" placeholder="Your Email">
+
+           <label for="message">Message for us</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Tell us what's on your mind"></textarea>
+           
+           <input type="submit" class="send-message-cta" value="Send Message">
+       </form>
+
+    <div id="status"></div>
+
+    </div>
+</section>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            // get the form elements defined in your form HTML above
+        
+            var form = document.getElementById('my-form');
+            // var button = document.getElementById("my-form-button");
+            var status = document.getElementById('status');
+        
+            // Success and Error functions for after the form is submitted
+        
+            function success() {
+            form.reset();
+            status.classList.add('success');
+            status.innerHTML = "Thanks!";
+            }
+        
+            function error() {
+            status.classList.add('error');
+            status.innerHTML = "Oops! There was a problem";
+            }
+        
+            // handle the form submission event
+        
+            form.addEventListener('submit', function (ev) {
+            ev.preventDefault();
+            var data = new FormData(form);
+            ajax(form.method, form.action, data, success, error);
+            });
+        });
+        
+        // helper function for sending an AJAX request
+        
+        function ajax(method, url, data, success, error) {
+            var xhr = new XMLHttpRequest();
+            xhr.open(method, url);
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.onreadystatechange = function () {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                success(xhr.response, xhr.responseType);
+            } else {
+                error(xhr.status, xhr.response, xhr.responseType);
+            }
+            };
+            xhr.send(data);
+        }
+        
+    </script>    
+    
+    
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            navbar = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            navbar.classList.add('mobile-cta');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            navbar.classList.remove('mobile-cta');
+
+        }) 
+    
+    </script>
+
+   
+
+
+
+</body>
+</html>    

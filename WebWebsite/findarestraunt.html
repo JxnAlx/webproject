@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smile Food Reviews</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" href="images/faviconlogo.png">
+    </head>
+
+<body>
+ 
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="home.html">SmileFoodReviewsツ</a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/hamburger-menu.svg" alt="Open Navigation Menu" width="15" height="15">
+        
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation Menu">
+                <ul class="primary-nav">
+                    <li class="current"><a href="home.html">Home</a></li>
+                    <li><a href="findarestraunt.html">Search for Restraunts</a></li>
+                    <li><a href="recs.html">Recomendations</a></li>
+                </ul>
+               
+                <ul class="secondary-nav">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li class="Contact-Us-cta"><a href="contact.html">Contact Us</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+   
+   <section class="find-intro-section">
+        <div class="find-intro-div"></div>
+
+        </div>
+   </section>
+   
+   
+   
+   
+   
+    <br>
+   <br>
+   <br>
+   <br> 
+   <br>
+   <br>
+   <br>
+   
+   <script src="filter.js"></script>
+    
+
+   <div id="buttons">
+    <button class="btn" onclick="filterObjects('all')">Show All</button>
+    <button class="btn" onclick="filterObjects('mexican')">Mexican</button>
+    <button class="btn" onclick="filterObjects('italian')">Italian</button>
+    <button class="btn" onclick="filterObjects('chinese')">Chinese</button>
+    <button class="btn" onclick="filterObjects('fast-food')">Fast Food</button>
+    <button class="btn" onclick="filterObjects('health')">Health</button>
+    <button class="btn" onclick="filterObjects('american')">American</button>
+    <button class="btn" onclick="filterObjects('coffee')">Coffee</button>
+
+    </div>
+<div class="objects">
+    <a href="asiangrill.html" class="box all chinese ">Asian Grill</a>
+    <a href="pandaexpress.html" class="box all chinese ">Panda Express</a>
+    <a href="starbucks.html" class="box all coffee fast-food">Starbucks</a>
+    <a href="mcdonalds.html" class="box all fast-food">McDonalds</a>
+    <a href="olivegarden.html" class="box all italian">Olive Garden</a>
+    <a href="jimmyjohns.html" class="box all fast-food">Jimmy Johns</a>
+    <a href="chickfila.html" class="box all fast-food ">Chick-Fil-A</a>
+    <a href="wendys..html" class="box all fast-food ">Wendy's</a>
+    <a href="chebahut.html" class="box all fast-food american">Cheba Hut</a>
+    <a href="subway.html" class="box all fast-food">Subway</a>
+    <a href="fiveguys.html" class="box all american fast-food">Five Guys</a>
+    <a href="tacobell.html" class="box all fast-food mexican">Taco Bell</a>
+    <a href="sonic.html" class="box all fast-food american ">Sonic</a>
+    <a href="dutchbros.html" class="box all coffee ">Dutch Bros</a>
+    <a href="hunans.html" class="box all chinese">Hunans</a>
+    <a href="wingstop.html" class="box all american fast-food">Wing Stop</a>
+    <a href="gibs.html" class="box all health fast-food">Gib's Bagels</a>
+    <a href="qdoba.html" class="box all mexican">Qdoba</a>
+    <a href="chipotle.html" class="box all mexican ">Chipotle</a>
+    <a href="riogrande.html" class="box all mexican ">Rio Grande</a>
+    <a href="noodles.html" class="box all fast-food">Noodles</a>
+    <a href="paninos.html" class="box all italian">Paninos</a>
+    <a href="berryblendz.html" class="box all health">Berry Blendz</a>
+    <a href="madgreens.html" class="box all health">MAD Greens</a>
+    <a href="asiangrill.html" class="box all american">MOD Pizza</a>
+    <a href="panera.html" class="box all italian health">Panera</a>
+
+
+</div>
+
+   
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            navbar = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            navbar.classList.add('mobile-cta');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            navbar.classList.remove('mobile-cta');
+
+        }) 
+    
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

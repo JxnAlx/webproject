@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body {
+  background: #001219;
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.navbar {
+  background: #ee9b00;
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.5em;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 3em 2em;
+}
+
+.subhead {
+  text-align: center;
+  font-size: 1.3em;
+  padding-bottom: 2em;
+  color: white;
+}
+
+.subhead-desc {
+  text-align: center;
+  color: white;
+  font-weight: none;
+  font-size: 1.5em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero .find-a-review-cta {
+  background-color: #bb3e03;
+  border: none;
+  color: blanchedalmond;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  border-radius: 5em;
+}
+
+.hero .find-a-review-cta:hover {
+  background-color: #ee9b00;
+}
+
+.hero .write-a-review-cta {
+  background-color: #bb3e03;
+  border: none;
+  color: blanchedalmond;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  border-radius: 5em;
+}
+
+.hero .write-a-review-cta:hover {
+  background-color: #ee9b00;
+}
+
+.features-section {
+  background: #005f73;
+}
+
+ul.features-list {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+ul.features-list li {
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+.contact-contact {
+  text-align: center;
+  color: white;
+  font-size: 3em;
+}
+
+label {
+  display: block;
+  font-size: 1.3em;
+  margin-bottom: .5em;
+  color: #ee9b00;
+}
+
+input, textarea {
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+}
+
+.send-message-cta {
+  background: #005f73;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5em;
+}
+
+nav.mobile-cta {
+  display: block;
+  width: 33%;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  background: #ee9b00;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.homepage-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav:hover {
+    font-weight: bold;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .helpful-desc {
+    font-size: 24px;
+  }
+}
+
+.send-message-cta {
+  text-align: center;
+  width: 100%;
+  border: #ee9b00;
+}
+
+.send-message-cta:hover {
+  background: #ee9b00;
+}
+
+#status {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  padding: 20px 20px;
+}
+
+#status.success {
+  background: green;
+  -webkit-animation: status 4s ease forwards;
+          animation: status 4s ease forwards;
+}
+
+#status.error {
+  background: red;
+  -webkit-animation: status 4s ease forwards;
+          animation: status 4s ease forwards;
+}
+
+@-webkit-keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.about-us-logo-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.we-are-smile {
+  text-align: center;
+  font-size: 52px;
+  color: blanchedalmond;
+  text-shadow: 1px 1px 2px white;
+}
+
+.about-us-div-2 {
+  text-align: center;
+  font-size: 32px;
+  color: blanchedalmond;
+}
+
+.search-bar {
+  background-color: #bb3e03;
+  border: none;
+  color: blanchedalmond;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  border-radius: 5em;
+}
+
+.search-bar-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box {
+  float: left;
+  background-color: #005f73;
+  color: blanchedalmond;
+  width: 125px;
+  line-height: 50px;
+  text-align: center;
+  display: none;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  background-color: #bb3e03;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: #ee9b00;
+}
+
+.universal-restraunt-div {
+  text-align: center;
+  font-size: 5em;
+  color: blanchedalmond;
+}
+
+.imgpics {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.myreview {
+  text-align: center;
+  font-size: 3em;
+  color: blanchedalmond;
+}
+
+.imgstarpics {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.rec1 {
+  font-size: 60px;
+  color: blanchedalmond;
+  text-align: center;
+}
+
+.eathere {
+  font-size: 40px;
+  color: blanchedalmond;
+  text-align: center;
+}
+
+.eatherepara {
+  font-size: 20px;
+  color: #ee9b00;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
